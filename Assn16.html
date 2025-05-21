@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+    }
+
+    .header{
+        height:50px;
+        width:100%;
+    }
+
+    .container1{
+        
+        display: flex;
+        margin-top: 30px;
+        margin-left: 100px;
+    }
+
+    .info1{
+        display: flex;
+        margin-top: 10px;
+        margin-left:47%;
+        gap: 30px;
+    }
+
+    .schedule{
+        height:30px;
+        width:200px;
+        display: flex;
+    }
+
+    .circle{
+        margin-top: -5px;
+        height:30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: orangered;
+        z-index: 1;
+    }
+
+    .black{
+        margin-top: -5px;
+        margin-left: -30px;
+        height:30px;
+        width:150px;
+        background-color: black;
+        border-radius: 100px;
+        color: white;
+        padding: 5px;
+        padding-left: 35px;
+        z-index: -1;
+    }
+
+    #one{
+        height:300px;
+        width:100%;
+        position: relative;
+        z-index: -1;
+    }
+
+    #two{
+        height:400px;
+        width:880px;
+        position: absolute;
+        top: 150px;
+        right:550px;
+        z-index: 1;
+        border-radius: 10px;;
+    }
+
+    .details{
+        background-color: rgb(247, 241, 241);
+        height:550px;
+        width:300px;
+        position: absolute;
+        top:150px;
+        right:150px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    label{
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    input{
+        border-radius: 100px;
+        padding: 0 10px;
+        width:260px;
+        height:30px;
+        margin-left: 17px;
+        margin-top: 15px;
+        border: 0;
+        background-color: rgb(222, 214, 214);
+    }
+
+    #message{
+        height:70px;
+        border-radius: 10px;
+    }
+
+    textarea{
+        border-radius: 10px;
+        padding: 5px 10px;
+        width:260px;
+        height:300px;
+        margin-left: 17px;
+        margin-top: 15px;
+        border: 0;
+        background-color: rgb(222, 214, 214);
+    }
+
+    button{
+        background-color: black;
+        color: white;
+        height:30px;
+        width:100px;
+        margin-left: 15px;
+        margin-top: 65px;
+        border-radius: 100px;
+    }
+
+    .call{
+        height: 100px;
+        width: 300px;
+        background-color: rgb(247, 241, 241);
+        position: absolute;
+        bottom: 20px;
+        left:200px;
+    }
+
+    #three{
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    #four{
+        margin-left: 120px;
+        margin-top: -50px;
+    }
+
+    #five{
+        margin-left: 120px;
+        margin-bottom: 30px;
+        color: rgb(147, 143, 138);
+    }
+
+    .mail{
+        height: 100px;
+        width: 300px;
+        background-color: rgb(247, 241, 241);
+        position: absolute;
+        bottom: 20px;
+        left:600px;
+    }
+
+    #six{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    #seven{
+        margin-left: 120px;
+        margin-top: -45px;
+    }
+
+    #eight{
+        margin-left: 120px;
+        margin-bottom: 30px;
+        color: rgb(147, 143, 138);
+    }
+
+    
+</style>
+<body>
+    <div class="parent">
+        <div class="header">
+            <div class="container1">
+                <h2>VILLA</h2>
+                <div class="info1">
+                    <p style="color: orangered;">Home</p>
+                    <p>Properties</p>
+                    <p>Property Details</p>
+                    <p>Contact Us</p>
+                    <div class="schedule">
+                        <div class="circle"></div>
+                        <div class="black">Schedule a visit</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <img id="one" src="./task/assets/contact-bg.jpg">
+            <img id="two" src="./task/assets/map.png">
+            <div class="details">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Your Name...">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Your E-mail...">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="Subject...">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Your Message"></textarea>
+                <button>Send Message</button>
+
+            </div>
+            <div class="call">
+                <img id="three" src="./task/assets/phone-icon.png">
+                <h3 id="four">010-020-0340</h3>
+                <p id="five">Phone Number</p>
+            </div>
+            <div class="mail">
+                <img id="six" src="./task/assets/email-icon.png">
+                <h3 id="seven">info@villa.co</h3>
+                <p id="eight">Business Email</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<style>
+
+    *{
+        margin: 0;
+        border: 0;
+        padding: 0;
+        background-color: #f0f0f0	;
+
+    }
+
+    .one{
+        color: rgb(34, 0, 255);
+        font-size: 40px;
+        text-align: center;
+        font-weight: 900;
+    }
+
+    .two{
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        color: rgb(195, 0, 255);
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+
+    .three{
+        font-size: 25px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .four{
+        font-size:20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .five{
+        font-size: 30px;
+        font-weight: 600;
+        color: rgb(195, 0, 255);
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+
+    .six{
+        font-size: 25px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #photo{
+        width: 50%;
+        height: 50%;
+        position: relative;
+        left:350px;
+    }
+
+
+    @media (max-width:952px){
+        .four{
+            width:100%;
+            max-width: 1000px;
+            font-size : 18px;  
+            justify-content: center; 
+        }
+    }
+
+    @media (max-width:932px){
+        .four{
+            width:100%;
+            max-width: 900px;
+            font-size : 18px;   
+        }
+    }
+
+     @media (max-width:895px){
+        .five{
+            width:100%;
+            max-width: 800px;
+            font-size : 27px;   
+        }
+    }
+
+     @media (max-width:855px){
+        .four{
+            width:100%;
+            max-width: 800px;
+            font-size : 18px;
+        }
+        .three{
+            width:100%;
+            max-width: 700px;
+            font-size : 20px;
+        }
+    }
+
+    @media (max-width:845px){
+        .six{
+            width:100%;
+            max-width: 700px;
+            font-size : 20px;   
+        }
+    }
+
+    @media (max-width:793px){
+        .four{
+            width:100%;
+            max-width: 700px;
+            font-size : 18px;   
+        }
+    }
+
+    @media (max-width:688px){
+        .one{
+            width:100%;
+            max-width: 700px;
+            font-size : 35px;   
+        }
+    }
+
+    @media (max-width:685px){
+        .three{
+            width:100%;
+            max-width: 700px;
+            font-size : 19px;   
+        }
+    }
+
+    @media (max-width:674px){
+        .six{
+            width:100%;
+            max-width: 700px;
+            font-size : 19px;   
+        }
+    }
+
+    @media (max-width:666px){
+        .four{
+            width:100%;
+            max-width: 700px;
+            font-size : 17px;   
+        }
+    }
+
+    @media (max-width:649px){
+        .three{
+            width:100%;
+            max-width: 700px;
+            font-size : 18px;   
+        }
+    }
+
+    @media (max-width:643px){
+        .six{
+            width:100%;
+            max-width: 700px;
+            font-size : 18px;   
+        }
+        .five{
+            width:100%;
+            max-width: 700px;
+            font-size : 26px;   
+        }
+    }
+
+    @media (max-width:631px){
+        .four{
+            width:100%;
+            max-width: 700px;
+            font-size : 16px;   
+        }
+    }
+
+    @media (max-width:615px){
+        .three{
+            width:100%;
+            max-width: 600px;
+            font-size : 17px;   
+        }
+        .five{
+            width:100%;
+            max-width: 600px;
+            font-size : 27px;   
+        }
+    }
+
+     @media (max-width:606px){
+        .one{
+            width:100%;
+            max-width: 600px;
+            font-size : 34px;   
+        }
+        .six{
+            width:100%;
+            max-width: 600px;
+            font-size : 17px;   
+        }
+    }
+
+    @media (max-width:594px){
+        .one{
+            width:100%;
+            max-width: 600px;
+            font-size : 33px;   
+        }
+        .four{
+            width:100%;
+            max-width: 600px;
+            font-size : 15px;   
+        }
+    }
+
+    @media (max-width:582px){
+        .three{
+            width:100%;
+            max-width: 700px;
+            font-size : 16px;   
+        }
+    }
+
+    @media (max-width:574px){
+        .six{
+            width:100%;
+            max-width: 700px;
+            font-size : 16px;   
+        }
+    }
+
+    @media (max-width:570px){
+        .one{
+            width:100%;
+            max-width: 700px;
+            font-size : 32px;   
+        }
+    }
+
+    @media (max-width:555px){
+        .four{
+            width:100%;
+            max-width: 700px;
+            font-size : 14px;   
+        }
+        .one{
+            width:100%;
+            max-width: 700px;
+            font-size : 31px;   
+        }
+    }
+
+    @media (max-width:548px){
+        .three{
+            width:100%;
+            max-width: 700px;
+            font-size : 15px;   
+        }
+        .five{
+            width:100%;
+            max-width: 700px;
+            font-size : 26px;   
+        }
+    }
+
+    @media (max-width:541px){
+        .one{
+            width:100%;
+            max-width: 600px;
+            font-size : 30px;   
+        }
+        .six{
+            width:100%;
+            max-width: 600px;
+            font-size : 15px;   
+        }
+    }
+
+    @media (max-width:516px){
+        .one{
+            width:100%;
+            max-width: 600px;
+            font-size : 29px;   
+        }
+        .four{
+            width:100%;
+            max-width: 600px;
+            font-size : 13px;   
+        }
+        .three{
+            width:100%;
+            max-width: 600px;
+            font-size : 14px;   
+        }
+    }
+
+    @media (max-width:505px){
+        .one{
+            width:100%;
+            max-width: 600px;
+            font-size : 28px;   
+        }
+        .six{
+            width:100%;
+            max-width: 600px;
+            font-size : 14px;   
+        }
+    }
+
+
+</style>
+<body>
+    <div class="one">Motivational Poster: Tribute to Courage</div><br>
+
+    <img id="photo" src="./Images/Pahalgam3.jpg" alt="Pahalgam Image"><br><br>
+
+    <div class="two">“<i>We rise by standing together</i>.”</div><br>
+
+    <div class="three">In memory of the brave souls affected by the Pahalgam attack, Kashmir.</div><br>
+
+    <div class="four">Let this moment remind us that terror can shake the ground, but it cannot shake our spirit.
+        From the heart of Kashmir, our unity will echo louder than fear.
+        We honor the strength of those who stood tall in the face of darkness.
+        
+        </div><br>
+
+    <div class="five"><i>"Pain is real, but so is hope. We don’t break – we become unbreakable</i>."</div><br>
+
+    <div class="six">☀️Salute to the heroes. Strength to the families. Peace to the valley.☀️ </div>
+</body>
+</html>

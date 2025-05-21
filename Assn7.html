@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    border:0;
+    }
+
+    .parent{
+        height:100vh;
+        width:100vw;
+        border: 10px black solid;
+        background-color: rgba(128, 128, 128, 0.733);
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items:start;
+    }
+
+    .color{
+        display:flex;
+        margin-top: 80px;
+        margin-left: 40px;
+    }
+    .black{
+        height: 10px;
+        width:30px;
+        background-color: black;
+        
+    }
+
+    .white{
+        height: 10px;
+        width:30px;
+        background-color: white;  
+    }
+
+    .blue{
+        height: 10px;
+        width:30px;
+        background-color: aquamarine;  
+    }
+
+    .word{
+        font-size: 50px;
+        margin-left: 40px;
+        
+    }
+
+    .image {
+        margin:40px;
+        background-color: rgb(127, 176, 255);
+        height: 45vh;
+        width:90vw;
+        
+    }
+
+    .image-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        
+    }
+    .circle {
+        background-color: white;
+        height:100px;
+        width:100px;
+        border-radius: 50%;
+        margin-left: 50px;
+        margin-top: 20px;
+    } 
+
+    .content {
+       color: white;
+       font-size: 20px;
+    }
+
+    .bg-img {
+        display:flex;
+        justify-content: center;
+        align-items: end;
+        height: 74%;
+        width: 100%;
+        
+    }
+
+    .bg-img img{
+        width: 150%;
+        height: 100%;
+        
+        
+    }
+
+    .para{
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        gap: 100px;
+
+    }
+
+    .para p {
+        font-size: 15px;
+    }
+
+   
+
+
+</style>
+
+<body>
+    <div class="parent">
+        <div class="header">
+            <div class="color">
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="blue"></div>
+            </div>
+            <img src="./Images/global.png" style="margin-right: 80px;">
+        </div>
+
+        <div class="word">Into the Wild
+        </div>
+
+        <div class="image">
+
+            <div class="image-header">
+
+                <div class="circle"></div>
+                <div class="content">a<br>Sean<br>Penn<br>film</div>
+            </div>
+            <div class="bg-img">
+                <img src="./Images/Tempo.png">
+            </div>
+        </div>
+
+            <h1 style="font-size: 20px; margin-left: 40px;">Starring</h1>
+            <div class="para">
+                
+                <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, dolores.</p>
+                <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p >Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                <p >Lorem ipsum dolor sit amet consectetur.</p>
+                <h2 style="margin-right: 120px;">/2007</h2>
+            </div>
+        
+
+    </div>
+</body>
+</html>

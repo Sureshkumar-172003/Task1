@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+    }
+
+    .header{
+        height:50px;
+        width:100%;
+    }
+
+    .container1{
+        
+        display: flex;
+        margin-top: 30px;
+        margin-left: 100px;
+    }
+
+    .info1{
+        display: flex;
+        margin-top: 10px;
+        margin-left:47%;
+        gap: 30px;
+    }
+
+    .schedule{
+        height:30px;
+        width:200px;
+        display: flex;
+    }
+
+    .circle{
+        margin-top: -5px;
+        height:30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: orangered;
+        z-index: 1;
+    }
+
+    .black{
+        margin-top: -5px;
+        margin-left: -30px;
+        height:30px;
+        width:150px;
+        background-color: black;
+        border-radius: 100px;
+        color: white;
+        padding: 5px;
+        padding-left: 35px;
+        z-index: -1;
+    }
+
+    hr{
+        margin-top: 10px;
+        color: rgb(166, 160, 160);
+        opacity: 0.5;
+    }
+
+    .container2{
+        display: flex;
+        margin-top: 100px;
+        margin-left: 100px;
+        gap: 100px;
+        height:500px;
+    }
+
+    .im1{
+        background-color: rgb(243, 237, 237);
+        width:370px;
+        padding:10px;
+    }
+
+    .apartment{
+        background-color: rgb(244, 160, 212);
+        height:30px;
+        width:100px;
+        margin-top: 15px;
+        border-radius: 5px;
+        padding-top: 5px;
+        padding-left: 10px;
+        
+    }
+
+    #one{
+        border-radius: 5px;
+
+    }
+
+    #two{
+        margin-left: 280px;
+        margin-top: -25px;
+    }
+
+    .payment{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-flow: row;
+        
+    }
+
+    span{
+        color: grey;
+    }
+
+    .schedule1{
+        height:30px;
+        width:100%;
+        display: flex;
+    }
+
+    .black1{
+        margin-top:50px;
+        margin-left: 80px;
+        height:30px;
+        width:150px;
+        background-color: black;
+        border-radius: 100px;
+        color: white;
+        padding: 5px;
+        padding-left: 25px;
+        
+
+    }
+
+    .im2{
+        background-color: rgb(243, 237, 237);
+        width:370px;
+        padding:10px;
+    }
+
+    .penthouse{
+        background-color: rgb(244, 160, 212);
+        height:30px;
+        width:100px;
+        margin-top: 15px;
+        border-radius: 5px;
+        padding-top: 5px;
+        padding-left: 10px;
+        
+    }
+
+    #three{
+        border-radius: 5px;
+
+    }
+
+    #four{
+        margin-left: 280px;
+        margin-top: -25px;
+    }
+
+    .schedule2{
+        height:30px;
+        width:100%;
+        display: flex;
+    }
+
+    .black2{
+        margin-top:50px;
+        margin-left: 80px;
+        height:30px;
+        width:150px;
+        background-color: black;
+        border-radius: 100px;
+        color: white;
+        padding: 5px;
+        padding-left: 25px;
+        
+
+    }
+
+    .im3{
+        background-color: rgb(243, 237, 237);
+        width:370px;
+        padding:10px;
+    }
+
+    .modern{
+        background-color: rgb(244, 160, 212);
+        height:30px;
+        width:120px;
+        margin-top: 15px;
+        border-radius: 5px; 
+        padding-top: 5px; 
+        padding-left: 10px;
+        
+    }
+
+    #five{
+        border-radius: 5px;
+
+    }
+
+    #six{
+        margin-left: 280px;
+        margin-top: -25px;
+    }
+
+    .schedule3{
+        height:30px;
+        width:100%;
+        display: flex;
+    }
+
+    .black3{
+        margin-top:50px;
+        margin-left: 80px;
+        height:30px;
+        width:150px;
+        background-color: black;
+        border-radius: 100px;
+        color: white;
+        padding: 5px;
+        padding-left: 25px;
+        
+
+    }
+
+</style>
+<body>
+    <div class="parent">
+        <div class="header">
+            <div class="container1">
+                <h2>VILLA</h2>
+                <div class="info1">
+                    <p style="color: orangered;">Home</p>
+                    <p>Properties</p>
+                    <p>Property Details</p>
+                    <p>Contact Us</p>
+                    <div class="schedule">
+                        <div class="circle"></div>
+                        <div class="black">Schedule a visit</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="body">
+            <div class="container2">
+                <div class="im1">
+                    <img id="one" src="./task/assets/property-04.jpg">
+                    <div class="apartment">Apartment</div>
+                    <h3 id="two" style="color: orangered;">$584.500</h3>
+                    <br>
+                    <h3>12 New Street Miami, OR 12650</h3>
+                    <br>
+                    <div class="payment">
+                        <p><span>Bedrooms:</span><b> 4</b></p>
+                        <p><span>Bathrooms:</span><b> 3</b></p>
+                        <p><span>Area:</span><b> 125m2</b></p>
+                        <p><span>Floor:</span><b> 25th</b></p>
+                        <p><span>Parking:</span><b> 2 cars</b></p>
+                    </div>
+                    <div class="schedule1">
+                        
+                        <div class="black1">Schedule a visit</div>
+                    </div>
+                </div>
+                <div class="im2">
+                    <img id="three" src="./task/assets/property-05.jpg">
+                    <div class="penthouse">Penthouse</div>
+                    <h3 id="four" style="color: orangered;">$925.600</h3>
+                    <br>
+                    <h3>34 Beach Street Miami, OR 42680</h3>
+                    <br>
+                    <div class="payment">
+                        <p><span>Bedrooms:</span><b> 4</b></p>
+                        <p><span>Bathrooms:</span><b> 4</b></p>
+                        <p><span>Area:</span><b> 180m2</b></p>
+                        <p><span>Floor:</span><b> 38th</b></p>
+                        <p><span>Parking:</span><b> 2 cars</b></p>
+                    </div>
+                    <div class="schedule2">
+                        
+                        <div class="black2">Schedule a visit</div>
+                    </div>
+                </div>
+                <div class="im3">
+                    <img id="five" src="./task/assets/property-06.jpg">
+                    <div class="modern">Modern Condo</div>
+                    <h3 id="six" style="color: orangered;">$450.000</h3>
+                    <br>
+                    <h3>22 New Street Portland, OR 16540</h3>
+                    <br>
+                    <div class="payment">
+                        <p><span>Bedrooms:</span><b> 3</b></p>
+                        <p><span>Bathrooms:</span><b> 2</b></p>
+                        <p><span>Area:</span><b> 165m2</b></p>
+                        <p><span>Floor:</span><b> 26th</b></p>
+                        <p><span>Parking:</span><b> 3 cars</b></p>
+                    </div>
+                    <div class="schedule3">
+                        
+                        <div class="black3">Schedule a visit</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

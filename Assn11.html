@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+    }
+
+    .header{
+        height:150px;
+        width:100%;
+    }
+
+    .container1{
+        display: flex;
+    }
+    .email{
+        display: flex;
+        margin-top: 10px;
+        margin-left: 50px;
+        color: rgb(166, 160, 160);
+    }
+
+    .info{
+        display: flex;
+        margin-top: 10px;
+        color: rgb(166, 160, 160);
+    }
+
+    #one{
+        height:20px;
+        margin-left: 50px;
+        
+    }
+
+    #two{
+        height:30px;
+        width:30px;
+        margin-left: 50px;
+        margin-top: -5px;
+    }
+
+    .icons{
+        height:30px;
+        width: 30px;
+        display: flex;
+        margin-left: 700px;
+        margin-top: 10px;
+        opacity: 0.5;
+        gap: 10px;
+    }
+
+    .container2{
+        
+        display: flex;
+        margin-top: 30px;
+        margin-left: 100px;
+    }
+
+    .info1{
+        display: flex;
+        margin-top: 10px;
+        margin-left:47%;
+        gap: 30px;
+    }
+
+    .schedule{
+        height:30px;
+        width:200px;
+        display: flex;
+    }
+
+    .circle{
+        margin-top: -5px;
+        height:30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: orange;
+        z-index: 1;
+    }
+
+    .black{
+        margin-top: -5px;
+        margin-left: -30px;
+        height:30px;
+        width:150px;
+        background-color: black;
+        border-radius: 100px;
+        color: white;
+        padding: 5px;
+        padding-left: 35px;
+        z-index: -1;
+    }
+
+    .body img{
+        position: relative;
+        /* z-index: -1; */
+        
+    }
+
+    .square{
+        position: absolute;
+        background-color: white;
+        height:30px;
+        width:150px;
+        /* z-index: 1; */
+        margin-top: -440px;
+        margin-left: 300px;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .orange{
+        color: orange;
+    }
+
+    .content{
+        position: absolute;
+        top:370px;
+        left: 300px;
+        color: white;
+    }
+
+    hr{
+        margin-top: 10px;
+        color: rgb(166, 160, 160);
+        opacity: 0.5;
+    }
+
+
+</style>
+<body>
+    <div class="parent">
+        <div class="header">
+            <div class="container1">
+                <div class="email">
+                <img id="one" src="./task/assets/email-icon.png">
+                <p>info@company.com</p>
+                </div>
+                <div class="info">
+                <img id="two" src="./task/assets/window.jpg">
+                <p>Sunny Isles Beach, Fl, 33160</p>
+                </div>
+                <div class="icons">
+                    <img src="./Images/fb.png">
+                    <img src="./Images/insta.jpg">
+                    <img src="./Images/twitter.png">
+                    <img src="./Images/linkedin.png">
+                    
+                </div>
+            </div>
+        
+            <hr>
+            <div class="container2">
+                <h2>VILLA</h2>
+                <div class="info1">
+                    <p style="color: orange;">Home</p>
+                    <p>Properties</p>
+                    <p>Property Details</p>
+                    <p>Contact Us</p>
+                    <div class="schedule">
+                        <div class="circle"></div>
+                        <div class="black">Schedule a visit</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <img height="600px" width="100%" src="./task/assets/banner-01.jpg">
+            <div class="square">Toronto, <span class="orange">Canada</span></div>
+            <div class="content">
+            <h1>HURRY!</h1>
+            <h1>GET THE BEST</h1>
+            <h1>VILLA FOR YOU</h1>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
